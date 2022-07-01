@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    //Declaring the variables of type integer
+    
+    int i, j, a;
+    
+    //Taking a user input of the multiplication table to be printed
+    
+    printf("Enter a number: \n");
+    scanf("%d", &a);
+    
+    printf("The multiplication table for the entered number %d is: ", a);
+    
+    for(j=1;j<=10;j++)
+    {
+      i = a * j;
+      
+      /*Here a is the number entered
+        j is the number to be multiplied with
+        and i will store the answer*/
+        
+      printf("\n%d  *  %d  =  %d", a, j, i);
+    }
+    return 0;
+}
